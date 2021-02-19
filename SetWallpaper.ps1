@@ -36,4 +36,4 @@ public class Params
  
 }
 
-Set-Wallpaper -Image "C:\GoesBackground\pic.jpg"
+Set-Wallpaper -Image "\\abe\Pants\Pictures\GOESpic.jpg"

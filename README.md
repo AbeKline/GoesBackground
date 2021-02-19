@@ -6,3 +6,6 @@ Script is set up to run in a folder directly on C: named GoesBackground, but if 
 
 
 You can set it up to automatically run in the background using Task Scheduler. Create Task; Triggers: At log on, repeat every 1 hour, indefinitely; Actions: [path to shell script]
+
+
+Okay, need to update the how-to, but basically I set the .sh up as a cron job to run every minute, then I set my background to slideshow, new pic every minute in the folder where I csave the pics
