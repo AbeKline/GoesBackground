@@ -36,4 +36,4 @@ public class Params
  
 }
 
-Set-Wallpaper -Image "\\abe\Pants\Pictures\GOESpic.jpg"
+Set-Wallpaper -Image "\\server\media\SpacePictures\GOESpic.jpg"

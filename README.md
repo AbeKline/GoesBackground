@@ -1,11 +1,6 @@
 # GoesBackground
-Script to grab the latest image from the GOES16 satellite and set it as the background on a Win10 computer
+Script to grab the latest image from the GOES16 satellite and set it as the background on a Win10 computer. 
 
-You will need gitbash to run this. When you initially set it up, right click SpaceBackground.sh > Open With... > Choose Another App > check Always Use This App to Open .sh Files > Git Bash
-Script is set up to run in a folder directly on C: named GoesBackground, but if you edit it you should be able to put it wherever you want. The loctaion is called out in three places: twice in SpaceBackground.sh and once on the last line of SetWallpaper.ps1
+The shell script will first copy whatever image is in the directory, then grab a new one. As long as those two images are the only ones in the folder, you can set your background to be a slideshow and it will update ehenver the shell script runs. I just set it up as a cron job on my server with the time */5 * * * * which means it runs every 5 minutes. Then set the background slideshow to switch every minute.
 
-
-You can set it up to automatically run in the background using Task Scheduler. Create Task; Triggers: At log on, repeat every 1 hour, indefinitely; Actions: [path to shell script]
-
-
-Okay, need to update the how-to, but basically I set the .sh up as a cron job to run every minute, then I set my background to slideshow, new pic every minute in the folder where I csave the pics
+The SetWallpaper.ps1 works, but it's *real* dirty and I recommend not doing it because it spawns a window every time it runs. 

@@ -1,1 +1,1 @@
-"C:\Program Files\Git\bin\bash.exe" --login -i -- "C:\Utilities\bats\Background\SpaceBackground.sh"
+"C:\Program Files\Git\bin\bash.exe" --login -i -- "C:\.git\SpaceBackground\SpaceBackground.sh"
