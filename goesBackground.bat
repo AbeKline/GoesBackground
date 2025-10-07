@@ -1,0 +1,2 @@
+curl https://www.star.nesdis.noaa.gov/GOES/conus.php?sat=G19  | grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*"| grep https://cdn.star.nesdis.noaa.gov/GOES19/ABI/CONUS/GEOCOLOR/[0-9]*_GOES19-ABI-CONUS-GEOCOLOR-5000x3000.jpg | xargs curl -o pic.jpg
+copy pic.jpg pic1.jpg /y
