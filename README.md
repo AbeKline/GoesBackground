@@ -1,7 +1,12 @@
 # GoesBackground
-Script to grab the latest image from the GOES16 satellite and set it as the background on a Win10 computer. You can change which satellite you grab an image from and which image type it grabs. Just go here and find your desired image scheme https://www.star.nesdis.noaa.gov/GOES/
 
-The shell script will first copy whatever image is in the directory, then grab a new one. As long as those two images are the only ones in the folder, you can set your background to be a slideshow and it will update ehenver the shell script runs. I just set it up as a cron job on my server with the time */5 * * * * which means it runs every 5 minutes. Then set the background slideshow to switch every minute.
-
-The SetWallpaper.ps1 works, but it's *real* dirty and I recommend not doing it because it spawns a window every time it runs. 
+Pushed a new bat file titled goesBackground.bat  
+Put this in an empty directory, go to Task Scheduler and create a new Task.   
+Under General, set it to run with highest privledges and whether or not the user is logged on. This hides the cmd window when it's running.  
+Under Triggers, create a new one and set it to run at logon, repeat task every 5 minutes for a duration of indefinitely. Untick Stop task if it runs longer than..  
+Under Actions, create a new one with the Action of Start a program, point it at \[FilePath\]\\goesBackground.bat and make sure to add that FilePath to the Start in box  
+Under Settings, untick the Stop the task box  
+Save the Task, run it manually  
+Next, go to the Personalization settings in Windows, expand Background, set it to Slideshow, change the album to the FilePath you used before, set it to Change picture every 1 minute, choose your preferred fit. I like Fit with a black background    
+Now you have a desktop background that give you an approximately live view of the continental United States.
 
