@@ -1,6 +1,6 @@
 # GoesBackground
 
-Pushed a new bat file titled goesBackground.bat  
+Download goesBackground.bat  
 Put this in an empty directory, go to Task Scheduler and create a new Task.   
 Under General, set it to run with highest privledges and whether or not the user is logged on. This hides the cmd window when it's running.  
 Under Triggers, create a new one and set it to run at logon, repeat task every 5 minutes for a duration of indefinitely. Untick Stop task if it runs longer than..  
