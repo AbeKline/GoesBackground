@@ -37,3 +37,4 @@ public class Params
 }
 
 Set-Wallpaper -Image "\\server\media\SpacePictures\GOESpic.jpg"
+
